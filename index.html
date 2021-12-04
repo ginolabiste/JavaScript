@@ -1,0 +1,58 @@
+* HTML document, ASCII text, with CRLF line terminators
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Records</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label for="">Fullname</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label for="">Occupation</label>
+                        <input type="text" name="occupation" id="occupation">
+                    </div>
+                    <div>
+                        <label for="">Company</label>
+                        <input type="text" name="company" id="company">
+                    </div>
+                    <div>
+                        <label for="">Code</label>
+                        <input type="text" name="code" id="code">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <th>Fullname</th>
+                        <th>Occupation</th>
+                        <th>Company</th>
+                        <th>Code</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="./script.js" ></script>
+</body>
+</html>
